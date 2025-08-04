@@ -39,11 +39,11 @@ namespace RuleWay.ProductApi.Controllers
         public async Task<ActionResult> Create(ProductDto dto)
         {
             if (string.IsNullOrWhiteSpace(dto.Title) || dto.Title.Length > 200)
-                return BadRequest("Title is required and must be less than 200 characters.");
+                return BadRequest("Başlık gereklidir ve 200 karakterden kısa olmalıdır.");
 
             var category = await _context.Categories.FindAsync(dto.CategoryId);
             if (category == null)
-                return BadRequest("Category not found.");
+                return BadRequest("Kategori bulunamadı.");
 
             var product = new Product
             {
@@ -66,11 +66,11 @@ namespace RuleWay.ProductApi.Controllers
             if (product == null) return NotFound();
 
             if (string.IsNullOrWhiteSpace(dto.Title) || dto.Title.Length > 200)
-                return BadRequest("Title is required and must be less than 200 characters.");
+                return BadRequest("Başlık gereklidir ve 200 karakterden kısa olmalıdır.");
 
             var category = await _context.Categories.FindAsync(dto.CategoryId);
             if (category == null)
-                return BadRequest("Category not found.");
+                return BadRequest("Kategori bulunuamadı.");
 
             product.Title = dto.Title;
             product.Description = dto.Description;
