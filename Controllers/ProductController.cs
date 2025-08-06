@@ -1,8 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using RuleWay.ProductApi.Data;
-using RuleWay.ProductApi.Dtos;
-using RuleWay.ProductApi.Entities;
+
+using RuleWay.Domain.Entities;
+using RuleWay.Business.Dtos;
+using RuleWay.DataAccess.Data;
 
 namespace RuleWay.ProductApi.Controllers
 {
