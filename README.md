@@ -7,5 +7,5 @@
 <img width="773" height="462" alt="image" src="https://github.com/user-attachments/assets/e3bfa510-35f2-4e3f-af1d-584160adaef3" />
 
 
-tr-> Products tablosunda yer alan CategoryId alanını, Categories tablosundaki Id sütununa ON DELETE CASCADE özelliğiyle foreign key olarak elle bağlanmıştır. Resimler ektedir.
-eng-> The CategoryId column in the Products table has been manually linked as a foreign key to the Id column in the Categories table with the ON DELETE CASCADE option. Images are attached.
+**tr →** Products tablosunda yer alan CategoryId alanını, Categories tablosundaki Id sütununa ON DELETE CASCADE özelliğiyle foreign key olarak elle bağlanmıştır. Resimler ektedir.  
+**en →** The CategoryId column in the Products table has been manually linked as a foreign key to the Id column in the Categories table with the ON DELETE CASCADE option. Images are attached.
